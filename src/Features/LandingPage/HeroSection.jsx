@@ -1,11 +1,17 @@
 import videoBg from "../../Assets/earth_bg_video.mp4";
+import "./Components/HeroSection.css";
 
 const HeroSection = () => {
   return (
-    <video autoPlay loop muted playsInline className="background-video">
-      <source src={videoBg} type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
+    <div className="video-container">
+      <video autoPlay loop muted playsInline className="background-video">
+        <source src={videoBg} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div className="content">
+        <h1>heading</h1>
+      </div>
+    </div>
   );
 };
 
