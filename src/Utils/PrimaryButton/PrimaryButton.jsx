@@ -1,3 +1,4 @@
+import "./PrimaryButton.css";
 const PrimaryButton = ({ label }) => {
   return <button>{label}</button>;
 };

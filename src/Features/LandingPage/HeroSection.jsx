@@ -12,7 +12,7 @@ const HeroSection = () => {
       <div className="content">
         <h1>The Bule Planet</h1>
         <p>Discover the Final Frontier, Space Awaits!</p>
-        <PrimaryButton label={"Begin your journey"} />
+        <PrimaryButton label={"Begin Your Journey"} />
       </div>
     </div>
   );
