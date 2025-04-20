@@ -1,4 +1,5 @@
 import videoBg from "../../Assets/earth_bg_video.mp4";
+import PrimaryButton from "../../Utils/PrimaryButton/PrimaryButton";
 import "./Components/HeroSection.css";
 
 const HeroSection = () => {
@@ -11,6 +12,7 @@ const HeroSection = () => {
       <div className="content">
         <h1>The Bule Planet</h1>
         <p>Discover the Final Frontier, Space Awaits!</p>
+        <PrimaryButton label={"Begin your journey"} />
       </div>
     </div>
   );
