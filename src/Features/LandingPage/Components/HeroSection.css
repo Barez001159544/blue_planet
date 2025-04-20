@@ -29,4 +29,11 @@
 
 .content h1 {
   font-family: "Karantina-Light";
+  font-size: 150px;
+  text-transform: uppercase;
+}
+
+.content p {
+  font-family: "Karantina-Light";
+  font-size: 25px;
 }

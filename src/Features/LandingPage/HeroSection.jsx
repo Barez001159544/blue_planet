@@ -10,6 +10,7 @@ const HeroSection = () => {
       </video>
       <div className="content">
         <h1>The Bule Planet</h1>
+        <p>Discover the Final Frontier, Space Awaits!</p>
       </div>
     </div>
   );
