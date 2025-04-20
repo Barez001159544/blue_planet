@@ -9,7 +9,7 @@ const HeroSection = () => {
         Your browser does not support the video tag.
       </video>
       <div className="content">
-        <h1>heading</h1>
+        <h1>The Bule Planet</h1>
       </div>
     </div>
   );

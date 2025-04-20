@@ -13,6 +13,22 @@
   }
 }
 
+@font-face {
+  font-family: "Karantina-Light";
+  src: local("Karantina-Light"),
+    url("../src/Assets/Fonts/Karantina-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Karantina-Regular";
+  src: local("Karanina-Regular"), url("../src/Assets/Fonts/Karantina-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Karantina-Bold";
+  src: local("Karanina-Bold"), url("../src/Assets/Fonts/Karantina-Bold.ttf") format("truetype");
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
