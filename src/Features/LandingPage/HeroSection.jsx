@@ -10,7 +10,7 @@ const HeroSection = () => {
         Your browser does not support the video tag.
       </video>
       <div className="content">
-        <h1>The Bule Planet</h1>
+        <h1>The Blue Planet</h1>
         <p>Discover the Final Frontier, Space Awaits!</p>
         <PrimaryButton label={"Begin Your Journey"} />
       </div>
