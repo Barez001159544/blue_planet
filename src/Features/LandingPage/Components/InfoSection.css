@@ -1,0 +1,10 @@
+.container {
+  background-image: linear-gradient(black, #0190d2);
+  height: 100vh;
+}
+
+img {
+  height: 100vh;
+  position: absolute;
+  left: -25%;
+}
