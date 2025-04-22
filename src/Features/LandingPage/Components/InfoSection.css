@@ -1,10 +1,48 @@
-.container {
+.info-container {
   background-image: linear-gradient(black, #0190d2);
   height: 100vh;
+  flex-direction: row;
+  display: flex;
+  color: white;
+  /* justify-content: center;
+  align-items: center; */
+  overflow-x: hidden;
 }
 
 img {
+  align-self: center;
   height: 100vh;
-  position: absolute;
-  left: -25%;
+  /* position: relative;
+  left: -25%; */
+}
+
+.info-content {
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+  padding: 20px;
+  padding-right: 220px;
+  box-sizing: border-box;
+}
+
+.line {
+  width: 100%; /* use full width of container */
+  max-width: 200px; /* prevent it from being too wide */
+  height: 0.5px;
+  background-color: white;
+  margin: 20px 40px;
+}
+
+.info h6 {
+  font-size: 46px;
+  text-transform: uppercase;
+}
+
+.info p {
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin: 40px 0;
+  text-align: justify;
 }
