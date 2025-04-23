@@ -22,6 +22,7 @@
   list-style: none;
   display: flex;
   gap: 30px;
+  text-transform: uppercase;
 }
 
 .nav-links li a {

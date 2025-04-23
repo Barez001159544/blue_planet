@@ -6,13 +6,13 @@ const NavigationBar = () => {
       <div className="logo">The Blue Planet</div>
       <ul className="nav-links">
         <li>
-          <a href="#home">Login</a>
+          <a href="#home">Home</a>
         </li>
         <li>
-          <a href="#explore">Sign-Up</a>
+          <a href="#info">Our Planet</a>
         </li>
         <li>
-          <a href="#mission">About</a>
+          <a href="#recent">Recent Blogs</a>
         </li>
       </ul>
     </nav>

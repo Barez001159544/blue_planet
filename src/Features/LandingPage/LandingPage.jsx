@@ -8,9 +8,15 @@ const LandingPage = () => {
   return (
     <div>
       <NavigationBar />
-      <HeroSection />
-      <InfoSection />
-      <RecentSection />
+      <div id="home">
+        <HeroSection />
+      </div>
+      <div id="info">
+        <InfoSection />
+      </div>
+      <div id="recent">
+        <RecentSection />
+      </div>
     </div>
   );
 };
