@@ -4,7 +4,7 @@ import "./Components/InfoSection.css";
 
 const InfoSection = () => {
   return (
-    <div className="info-container">
+    <section className="info-container">
       <img src={earth} alt="Earth 3D Image" />
 
       <div className="info-content">
@@ -23,7 +23,7 @@ const InfoSection = () => {
           <PrimaryButton label={"Find More Information"} />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

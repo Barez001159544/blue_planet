@@ -4,7 +4,7 @@ import "./Components/HeroSection.css";
 
 const HeroSection = () => {
   return (
-    <div className="container">
+    <section className="hero-container">
       <video autoPlay loop muted playsInline className="background-video">
         <source src={videoBg} type="video/mp4" />
         Your browser does not support the video tag.
@@ -14,7 +14,7 @@ const HeroSection = () => {
         <p>Discover the Final Frontier, Space Awaits!</p>
         <PrimaryButton label={"Begin Your Journey"} />
       </div>
-    </div>
+    </section>
   );
 };
 
