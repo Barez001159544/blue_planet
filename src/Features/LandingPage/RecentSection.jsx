@@ -28,7 +28,7 @@ const RecentSection = () => {
             <img src={blog.image} alt="" />
             <div className="blog-content">
               <div className="blog-heading">
-                <h6>01/05</h6>
+                <h6>0{blogs.indexOf(blog) + 1}/0{blogs.length}</h6>
                 <div className="blog-heading-line"></div>
               </div>
               <h2>{blog.title}</h2>
