@@ -2,6 +2,7 @@
   height: 100vh;
   background-color: #0190d2;
   color: white;
+  align-content: center;
 }
 
 .recent-container h1 {
@@ -10,19 +11,21 @@
   color: transparent;
   font-size: 150px;
   text-transform: uppercase;
+  justify-self: center;
+  margin-bottom: 80px;
 }
 
 .blogs {
   display: flex;
   flex-direction: row;
   overflow-x: auto;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .blogs::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera */
-  }
+  display: none;
+}
 
 .blog-item {
   display: flex;
