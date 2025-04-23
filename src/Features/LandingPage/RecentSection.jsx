@@ -1,11 +1,13 @@
 import "./Components/RecentSection.css";
 import ex from "../../Assets/images/space_bg.jpg";
+import PrimaryButton from "../../Utils/PrimaryButton/PrimaryButton";
 
 const blogs = [
   {
     id: 1,
     title: "Exploring the Stars",
-    summary: "An introduction to stellar navigation and astrophysics.",
+    summary:
+      "Embark on a journey through the cosmos—explore distant galaxies, uncover space mysteries, and be part of humanity’s stellar future. Embark on a journey through the cosmos—explore distant galaxies.",
     image: ex,
   },
   {
@@ -31,6 +33,7 @@ const RecentSection = () => {
               </div>
               <h2>{blog.title}</h2>
               <p>{blog.summary}</p>
+              <PrimaryButton label={"Explore"} />
             </div>
           </article>
         ))}

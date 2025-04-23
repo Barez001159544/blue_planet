@@ -1,6 +1,7 @@
 .recent-container {
   height: 100vh;
   background-color: #0190d2;
+  color: white;
 }
 
 .recent-container h1 {
@@ -24,15 +25,9 @@
 .blog-heading {
   display: flex;
   align-items: center;
-  font-size: 20px;
-  color: white;
+  font-size: 25px;
   font-weight: lighter;
   margin-bottom: 30px;
-}
-
-.blog-content {
-  margin: 40px;
-  align-content: center;
 }
 
 .blog-heading-line {
@@ -42,8 +37,26 @@
   margin-left: 20px;
 }
 
+.blog-content {
+  margin: 40px;
+  align-content: center;
+}
+
+.blog-content h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.blog-content p{
+    letter-spacing: 1px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
 .blogs img {
-    margin-left: 80px;
+  margin-left: 80px;
   width: 400px;
   height: 300px;
   border-radius: 20px;
