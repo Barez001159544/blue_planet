@@ -1,6 +1,6 @@
 .info-container {
   background-image: linear-gradient(black, #0190d2);
-  height: 100vh;
+  height: 75vh;
   flex-direction: row;
   display: flex;
   color: white;
@@ -11,12 +11,13 @@
 
 img {
   align-self: center;
-  height: 100vh;
+  height: 75vh;
   /* position: relative;
   left: -25%; */
 }
 
 .info-content {
+  margin-top: 20vh;
   align-self: center;
   display: flex;
   flex-direction: row;
@@ -28,8 +29,8 @@ img {
 }
 
 .line {
-  width: 100%; /* use full width of container */
-  max-width: 200px; /* prevent it from being too wide */
+  width: 100%;
+  max-width: 200px;
   height: 0.5px;
   background-color: white;
   margin: 20px 40px;
