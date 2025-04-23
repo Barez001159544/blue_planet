@@ -2,3 +2,50 @@
   height: 100vh;
   background-color: #0190d2;
 }
+
+.recent-container h1 {
+  -webkit-text-stroke: 0.5px white;
+  font-weight: lighter;
+  color: transparent;
+  font-size: 150px;
+  text-transform: uppercase;
+}
+
+.blogs {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+}
+
+.blog-item {
+  display: flex;
+}
+
+.blog-heading {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  color: white;
+  font-weight: lighter;
+  margin-bottom: 30px;
+}
+
+.blog-content {
+  margin: 40px;
+  align-content: center;
+}
+
+.blog-heading-line {
+  width: 300px;
+  height: 1px;
+  background: white;
+  margin-left: 20px;
+}
+
+.blogs img {
+    margin-left: 80px;
+  width: 400px;
+  height: 300px;
+  border-radius: 20px;
+  border: 1px white solid;
+}
