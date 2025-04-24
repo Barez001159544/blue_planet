@@ -30,6 +30,12 @@
   padding-bottom: 20px;
 }
 
+.title-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 20px;
+}
 .info-content h1 {
   margin-top: -75px;
   /* width: 80vw; */
@@ -39,8 +45,6 @@
   font-size: 150px;
   text-transform: uppercase;
   justify-self: center;
-  /* position: absolute;
-  top: -75px; */
 }
 
 /* img {

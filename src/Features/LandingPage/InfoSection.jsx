@@ -7,7 +7,10 @@ const InfoSection = () => {
     <section className="info-container">
       <div className="bg-image">
         <div className="info-content">
+          <div className="title-block">
           <h1>Our Home Planet</h1>
+          <p>Discover the mysteries, beauty, and life that make our home planet truly extraordinary.</p>
+          </div>
           <PrimaryButton label={"Get Started"} />
         </div>
       </div>
