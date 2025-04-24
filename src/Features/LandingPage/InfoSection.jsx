@@ -6,9 +6,9 @@ const InfoSection = () => {
   return (
     <section className="info-container">
       <div className="bg-image">
-        <div className="content">
-          <h1>Title</h1>
-          <PrimaryButton label={"HEY"} />
+        <div className="info-content">
+          <h1>Our Home Planet</h1>
+          <PrimaryButton label={"Get Started"} />
         </div>
       </div>
       {/* <img src={earth} alt="Earth 3D Image" />
