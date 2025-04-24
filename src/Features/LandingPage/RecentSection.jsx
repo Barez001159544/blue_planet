@@ -1,10 +1,12 @@
 import "./Components/RecentSection.css";
 import PrimaryButton from "../../Utils/PrimaryButton/PrimaryButton";
+import { useInView } from "react-intersection-observer";
 
 import astronomy from "../../Assets/Images/RecentSectionImages/astronomy.jpg";
 import solar_system from "../../Assets/Images/RecentSectionImages/solar_system.jpg";
 import telescope from "../../Assets/Images/RecentSectionImages/telescope.jpg";
 import universe from "../../Assets/Images/RecentSectionImages/universe.jpg";
+import { useEffect, useState } from "react";
 
 const techs = [
   {
@@ -42,12 +44,26 @@ const techs = [
 ];
 
 const RecentSection = () => {
+  const { ref, inView } = useInView({
+    threshold: 0,
+    triggerOnce: false,
+  });
+
+  const [startItemAnimation, setStrtItemAnimation] = useState(false);
+
+  useEffect(() => {
+    if (inView) setStrtItemAnimation(true);
+  }, [inView]);
   return (
     <section className="recent-container">
       <h1>Recent Techs</h1>
-      <div className="techs">
+      <div ref={ref} className="techs">
         {techs.map((tech) => (
-          <article className="tech-item tech-item-animatin">
+          <article
+            className={
+              startItemAnimation ? "tech-item tech-item-animation" : "tech-item"
+            }
+          >
             <img src={tech.image} alt="" />
             <div className="tech-content">
               <div className="tech-heading">

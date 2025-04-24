@@ -5,7 +5,7 @@ import "./Components/InfoSection.css";
 import { useInView } from "react-intersection-observer";
 
 const InfoSection = () => {
-  const { ref, inView, entry } = useInView({
+  const { ref, inView} = useInView({
     threshold: 0,
     triggerOnce: false,
   });
