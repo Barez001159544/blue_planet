@@ -44,7 +44,7 @@ const techs = [
 const RecentSection = () => {
   return (
     <section className="recent-container">
-      <h1>Recent Technologies</h1>
+      <h1>Recent Techs</h1>
       <div className="techs">
         {techs.map((tech) => (
           <article className="tech-item">
@@ -58,7 +58,10 @@ const RecentSection = () => {
               </div>
               <h2>{tech.title}</h2>
               <p>{tech.summary}</p>
-              <PrimaryButton label={"Try It Out"} />
+              <PrimaryButton
+                label={"Try It Out"}
+                onClick={() => window.open(tech.link)}
+              />
             </div>
           </article>
         ))}
