@@ -16,9 +16,14 @@
   width: 80vw;
   height: 60vh;
   border-radius: 35px;
-  /* overflow: hidden; */
   display: flex;
   justify-content: center;
+  transition: 0.3s ease;
+}
+
+.info-container .bg-image:hover {
+  width: 85vw;
+  height: 65vh;
 }
 
 .info-content {
@@ -50,7 +55,7 @@
   font-size: 20px;
 }
 
-.title-block .type-writer{
+.title-block .type-writer {
   display: inline-block;
   overflow: hidden;
   border-right: 2px solid white;

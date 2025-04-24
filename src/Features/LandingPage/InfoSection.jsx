@@ -5,7 +5,10 @@ import "./Components/InfoSection.css";
 import { useInView } from "react-intersection-observer";
 
 const InfoSection = () => {
-  const { ref, inView, entry } = useInView({threshold: 0,});
+  const { ref, inView, entry } = useInView({
+    threshold: 0,
+    triggerOnce: false,
+  });
   const [startTypeAnimation, setStartTypingAnimation] = useState(false);
 
   useEffect(() => {
@@ -16,9 +19,12 @@ const InfoSection = () => {
     <section className="info-container">
       <div className="bg-image">
         <div className="info-content">
-          <div ref = {ref} className="title-block">
-          <h1>Our Home Planet</h1>
-          <p className={startTypeAnimation && "type-writer"}>Discover the mysteries, beauty, and life that make our home planet truly extraordinary.</p>
+          <div ref={ref} className="title-block">
+            <h1>Our Home Planet</h1>
+            <p className={startTypeAnimation && "type-writer"}>
+              Discover the mysteries, beauty, and life that make our home planet
+              truly extraordinary.
+            </p>
           </div>
           <PrimaryButton label={"Get Started"} />
         </div>
