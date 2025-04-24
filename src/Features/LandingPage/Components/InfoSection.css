@@ -1,19 +1,23 @@
 .info-container {
   background-image: linear-gradient(black, #0190d2);
-  height: 75vh;
+  height: 100vh;
   flex-direction: row;
   display: flex;
   color: white;
-  /* justify-content: center;
-  align-items: center; */
   overflow-x: hidden;
 }
 
-img {
+.info-container .bg-image {
+  background-image: url("C:\Users\BEST TECH\Desktop\react knowledge\astro_website\src\Assets\Images\earth_in_out.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 80vw;
+  height: 60vh;
+}
+
+/* img {
   align-self: center;
   height: 75vh;
-  /* position: relative;
-  left: -25%; */
 }
 
 .info-content {
@@ -46,4 +50,4 @@ img {
   letter-spacing: 1px;
   margin: 40px 0;
   text-align: justify;
-}
+} */

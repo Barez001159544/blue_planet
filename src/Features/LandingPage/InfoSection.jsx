@@ -5,7 +5,13 @@ import "./Components/InfoSection.css";
 const InfoSection = () => {
   return (
     <section className="info-container">
-      <img src={earth} alt="Earth 3D Image" />
+      <div className="bg-image">
+        <div className="content">
+          <h1>Title</h1>
+          <PrimaryButton label={"HEY"} />
+        </div>
+      </div>
+      {/* <img src={earth} alt="Earth 3D Image" />
 
       <div className="info-content">
         <div className="line"></div>
@@ -22,7 +28,7 @@ const InfoSection = () => {
           </p>
           <PrimaryButton label={"Find More Information"} />
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };
