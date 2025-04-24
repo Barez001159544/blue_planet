@@ -15,7 +15,7 @@
   margin-bottom: 80px;
 }
 
-.blogs {
+.techs {
   display: flex;
   flex-direction: row;
   overflow-x: auto;
@@ -23,15 +23,15 @@
   -ms-overflow-style: none;
 }
 
-.blogs::-webkit-scrollbar {
+.techs::-webkit-scrollbar {
   display: none;
 }
 
-.blog-item {
+.tech-item {
   display: flex;
 }
 
-.blog-heading {
+.tech-heading {
   display: flex;
   align-items: center;
   font-size: 25px;
@@ -39,33 +39,33 @@
   margin-bottom: 30px;
 }
 
-.blog-heading-line {
+.tech-heading-line {
   width: 300px;
   height: 1px;
   background: white;
   margin-left: 20px;
 }
 
-.blog-content {
+.tech-content {
   margin: 40px;
   align-content: center;
 }
 
-.blog-content h2 {
+.tech-content h2 {
   text-transform: uppercase;
   font-size: 30px;
   margin-bottom: 10px;
   font-weight: lighter;
 }
 
-.blog-content p {
+.tech-content p {
   letter-spacing: 1px;
   font-size: 20px;
   margin-bottom: 30px;
   text-align: justify;
 }
 
-.blogs img {
+.techs img {
   margin-left: 80px;
   width: 400px;
   height: 300px;
