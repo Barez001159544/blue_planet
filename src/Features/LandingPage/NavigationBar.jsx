@@ -12,7 +12,7 @@ const NavigationBar = () => {
           <a href="#info">Our Planet</a>
         </li>
         <li>
-          <a href="#recent">Recent Blogs</a>
+          <a href="#recent">Recent Techs</a>
         </li>
       </ul>
     </nav>

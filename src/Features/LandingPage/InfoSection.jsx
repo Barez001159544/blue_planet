@@ -1,15 +1,24 @@
+import { use, useEffect, useState } from "react";
 import earth from "../../Assets/Images/earth_3d.png";
 import PrimaryButton from "../../Utils/PrimaryButton/PrimaryButton";
 import "./Components/InfoSection.css";
+import { useInView } from "react-intersection-observer";
 
 const InfoSection = () => {
+  const { ref, inView, entry } = useInView({threshold: 0,});
+  const [startTypeAnimation, setStartTypingAnimation] = useState(false);
+
+  useEffect(() => {
+    if (inView) setStartTypingAnimation(true);
+  }, [inView]);
+
   return (
     <section className="info-container">
       <div className="bg-image">
         <div className="info-content">
-          <div className="title-block">
+          <div ref = {ref} className="title-block">
           <h1>Our Home Planet</h1>
-          <p>Discover the mysteries, beauty, and life that make our home planet truly extraordinary.</p>
+          <p className={startTypeAnimation && "type-writer"}>Discover the mysteries, beauty, and life that make our home planet truly extraordinary.</p>
           </div>
           <PrimaryButton label={"Get Started"} />
         </div>
