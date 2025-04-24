@@ -1,5 +1,5 @@
 import "./Components/RecentSection.css";
-import ex from "../../Assets/images/space_bg.jpg";
+import ex from "../../Assets/Images/space_bg.jpg";
 import PrimaryButton from "../../Utils/PrimaryButton/PrimaryButton";
 
 const blogs = [
