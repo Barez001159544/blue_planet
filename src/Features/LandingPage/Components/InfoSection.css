@@ -1,5 +1,5 @@
 .info-container {
-  background-image: linear-gradient(black, #0190d2);
+  background-image: linear-gradient(black, #00202e, #00354e, #0190d2);
   height: 100vh;
   display: flex;
   justify-content: center;
