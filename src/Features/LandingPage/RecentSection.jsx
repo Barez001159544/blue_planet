@@ -47,7 +47,7 @@ const RecentSection = () => {
       <h1>Recent Techs</h1>
       <div className="techs">
         {techs.map((tech) => (
-          <article className="tech-item">
+          <article className="tech-item tech-item-animatin">
             <img src={tech.image} alt="" />
             <div className="tech-content">
               <div className="tech-heading">
