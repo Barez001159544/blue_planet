@@ -1,6 +1,9 @@
 import "./Components/FooterSection.css";
 
-import universe from "../../Assets/Images/RecentSectionImages/universe.jpg";
+import facebook from "../../Assets/Images/Social/facebook.png";
+import twitter from "../../Assets/Images/Social/twitter.png";
+import instagram from "../../Assets/Images/Social/instagram.png";
+import github from "../../Assets/Images/Social/github.png";
 
 const FooterSection = () => {
     return (
@@ -11,16 +14,16 @@ const FooterSection = () => {
                 To ignore, add // eslint-disable-next-line to the line before.</p>
                 <div className="social">
                     <a href="#">
-                        <img src={universe} alt="" />
+                        <img src={facebook} alt="" />
                     </a>
                     <a href="#">
-                        <img src={universe} alt="" />
+                        <img src={twitter} alt="" />
                     </a>
                     <a href="#">
-                        <img src={universe} alt="" />
+                        <img src={instagram} alt="" />
                     </a>
                     <a href="#">
-                        <img src={universe} alt="" />
+                        <img src={github} alt="" />
                     </a>
                 </div>
                 <h6>&copy; 2025 Tawakal All-Rights Reserved.</h6>
