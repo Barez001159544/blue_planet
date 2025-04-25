@@ -14,6 +14,9 @@ const NavigationBar = () => {
         <li>
           <a href="#recent">Recent Techs</a>
         </li>
+        <li>
+          <a href="#footer">Get in Touch</a>
+        </li>
       </ul>
     </nav>
   );

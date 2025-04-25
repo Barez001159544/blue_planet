@@ -20,7 +20,7 @@ const LandingPage = () => {
       <div id="recent">
         <RecentSection />
       </div>
-      <div id="Footer">
+      <div id="footer">
         <FooterSection />
       </div>
     </div>
