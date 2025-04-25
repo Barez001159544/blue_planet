@@ -74,13 +74,27 @@
     left: 0;
     flex-direction: column;
     /* background-color: #232325; */
-    background-image: linear-gradient(#0190d2, #00354e, #00202e, black);
+    background: linear-gradient(-45deg, #0190d2, #00354e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
     height: 100vh;
     width: 100%;
     padding-top: 120px;
     text-align: center;
     transition: all 0.2s ease-in-out;
     z-index: -1;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
 
   .nav-links.open {
