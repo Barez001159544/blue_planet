@@ -9,6 +9,7 @@ const InfoSection = () => {
     threshold: 0,
     triggerOnce: false,
   });
+  
   const [startTypeAnimation, setStartTypingAnimation] = useState(false);
 
   useEffect(() => {
