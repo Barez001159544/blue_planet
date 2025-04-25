@@ -1,4 +1,4 @@
-import videoBg from "../../Assets/Videos/earth_bg_video.mp4";
+import videoBg from "../../Assets/Videos/earth_bg_video_reverse.mp4";
 import PrimaryButton from "../../Utils/PrimaryButton/PrimaryButton";
 import "./Components/HeroSection.css";
 
