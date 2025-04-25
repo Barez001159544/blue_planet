@@ -1,11 +1,18 @@
 import videoBg from "../../Assets/Videos/earth_bg_video_reverse.mp4";
 import PrimaryButton from "../../Utils/PrimaryButton/PrimaryButton";
 import "./Components/HeroSection.css";
+import { useRef, useEffect } from "react";
 
 const HeroSection = () => {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    videoRef.current.playbackRate = 0.8;
+  }, []);
+
   return (
     <section className="hero-container">
-      <video autoPlay loop muted playsInline className="background-video">
+      <video ref={videoRef} autoPlay loop muted playsInline className="background-video">
         <source src={videoBg} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
