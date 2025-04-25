@@ -1,20 +1,40 @@
-import { use, useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import earth from "../../Assets/Images/earth_3d.png";
 import PrimaryButton from "../../Utils/PrimaryButton/PrimaryButton";
 import "./Components/InfoSection.css";
 import { useInView } from "react-intersection-observer";
+import Typewriter from 'typewriter-effect/dist/core';
 
 const InfoSection = () => {
-  const { ref, inView} = useInView({
+  const { ref, inView } = useInView({
     threshold: 0,
     triggerOnce: false,
   });
-  
+
   const [startTypeAnimation, setStartTypingAnimation] = useState(false);
+  const textRef = useRef(null);
 
   useEffect(() => {
-    if (inView) setStartTypingAnimation(true);
-  }, [inView]);
+    if (inView && !startTypeAnimation) {
+      setStartTypingAnimation(true);
+    }
+  }, [inView, startTypeAnimation]);
+
+  useEffect(() => {
+    if (startTypeAnimation && textRef.current) {
+      const typewriter = new Typewriter(textRef.current, {
+        strings: [
+          "Discover the mysteries, beauty, and life that make our home planet truly extraordinary."
+        ],
+        autoStart: true,
+        loop: true,
+        delay: 75,
+        pauseFor: 300000
+      });
+
+      typewriter.start();
+    }
+  }, [startTypeAnimation]);
 
   return (
     <section className="info-container">
@@ -22,32 +42,11 @@ const InfoSection = () => {
         <div className="info-content">
           <div ref={ref} className="title-block">
             <h1>Our Home Planet</h1>
-            <p className={startTypeAnimation && "type-writer"}>
-              Discover the mysteries, beauty, and life that make our home planet
-              truly extraordinary.
-            </p>
+            <p ref={textRef}></p>
           </div>
-          <PrimaryButton label={"Get Started"} />
+            <PrimaryButton label={"Get Started"} />
         </div>
       </div>
-      {/* <img src={earth} alt="Earth 3D Image" />
-
-      <div className="info-content">
-        <div className="line"></div>
-
-        <div className="info">
-          <h6>Our Home Planet</h6>
-          <p>
-            Embark on a journey through the cosmos—explore distant galaxies,
-            uncover space mysteries, and be part of humanity’s stellar future.
-            Embark on a journey through the cosmos—explore distant galaxies,
-            uncover space mysteries, and be part of humanity’s stellar future.
-            Embark on a journey through the cosmos—explore distant galaxies,
-            uncover space mysteries, and be part of humanity’s stellar future.
-          </p>
-          <PrimaryButton label={"Find More Information"} />
-        </div>
-      </div> */}
     </section>
   );
 };
