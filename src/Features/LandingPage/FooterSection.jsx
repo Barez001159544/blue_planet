@@ -23,7 +23,7 @@ const FooterSection = () => {
                         <img src={universe} alt="" />
                     </a>
                 </div>
-                <h1>&copy; 2025 Tawakal All-Rights Reserved.</h1>
+                <h6>&copy; 2025 Tawakal All-Rights Reserved.</h6>
             </div>
         </footer>
     );
