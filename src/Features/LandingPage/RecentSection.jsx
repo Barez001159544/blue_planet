@@ -59,7 +59,7 @@ const RecentSection = () => {
       <h1>Recent Techs</h1>
       <div ref={ref} className="techs">
         {techs.map((tech) => (
-          <article
+          <article key={tech.id}
             className={
               startItemAnimation ? "tech-item tech-item-animation" : "tech-item"
             }
