@@ -7,7 +7,7 @@ const FooterSection = () => {
         <footer>
             <div className="footer-container">
                 <h1>The Blue Planet</h1>
-                <p>Search for the keywords to learn more about each warning.
+                <p>Search for the keywords to learn more about each warning.<br/>
                 To ignore, add // eslint-disable-next-line to the line before.</p>
                 <div className="social">
                     <a href="#">
