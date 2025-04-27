@@ -1,5 +1,4 @@
 import { useEffect, useState, useRef } from "react";
-import earth from "../../Assets/Images/earth_3d.png";
 import PrimaryButton from "../../Utils/PrimaryButton/PrimaryButton";
 import "./Components/InfoSection.css";
 import { useInView } from "react-intersection-observer";
