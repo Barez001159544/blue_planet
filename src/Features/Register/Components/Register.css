@@ -1,0 +1,13 @@
+.register-section {
+  background-color: #0190d2;
+  height: 100vh;
+  display: flex;
+  padding: 50px;
+}
+
+.image-container{
+    background-image: url("C:\Users\BEST TECH\Desktop\react knowledge\blue_planet\src\Assets\Images\universe_zoomed.jpg");
+    width: 50%;
+    border-radius: 25px;
+    padding: 25px;
+}

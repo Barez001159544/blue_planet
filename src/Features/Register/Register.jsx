@@ -1,9 +1,10 @@
 import universe_zoomed from "../../Assets/Images/universe_zoomed.jpg";
+import "./Components/Register.css";
 
 const Register = () => {
     return (
-        <section>
-            <div>
+        <section className="register-section">
+            <div className="image-container">
                 <button> X</button>
             </div>
             <div>
