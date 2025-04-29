@@ -11,3 +11,20 @@
     border-radius: 25px;
     padding: 25px;
 }
+
+.content-container{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.in-content-container{
+  justify-items: end;
+}
+
+.in-content-container h3{
+  font-size: 75px;
+  font-weight: bold;
+  color: white;
+}
