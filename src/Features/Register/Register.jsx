@@ -1,8 +1,15 @@
-import universe_zoomed from "../../Assets/Images/universe_zoomed.jpg";
 import IconButton from "../../Utils/IconButton/IconButton";
 import "./Components/Register.css";
+import { useNavigate } from "react-router-dom";
 
 const Register = () => {
+
+    const navigate = useNavigate();
+
+    const handleBackButton = () => {
+        navigate(-1);
+    }
+
   const btnIcon = (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -22,7 +29,7 @@ const Register = () => {
   return (
     <section className="register-section">
       <div className="image-container">
-        <IconButton icon={btnIcon} />
+        <IconButton icon={btnIcon} onClick={handleBackButton} />
       </div>
       <div className="content-container">
         <div className="in-content-container">
