@@ -2,7 +2,7 @@
   background-color: #0190d2;
   height: 100vh;
   display: flex;
-  padding: 50px;
+  padding: 25px;
 }
 
 .image-container{
@@ -27,4 +27,5 @@
   font-size: 75px;
   font-weight: bold;
   color: white;
+  text-align: start;
 }
