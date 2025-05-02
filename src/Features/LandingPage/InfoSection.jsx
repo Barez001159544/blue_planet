@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from "react";
-import PrimaryButton from "../../Utils/PrimaryButton/PrimaryButton";
+import LandingButton from "../../Utils/LandingButton/LandingButton";
 import "./Components/InfoSection.css";
 import { useInView } from "react-intersection-observer";
 import Typewriter from "typewriter-effect/dist/core";
@@ -50,7 +50,7 @@ const InfoSection = () => {
             <h1>Our Home Planet</h1>
             <p ref={textRef}></p>
           </div>
-          <PrimaryButton label={"Get Started"} onClick={handleClick} />
+          <LandingButton label={"Get Started"} onClick={handleClick} />
         </div>
       </div>
     </section>

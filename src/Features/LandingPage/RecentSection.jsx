@@ -1,5 +1,4 @@
 import "./Components/RecentSection.css";
-import PrimaryButton from "../../Utils/PrimaryButton/PrimaryButton";
 import { useInView } from "react-intersection-observer";
 
 import astronomy from "../../Assets/Images/RecentSectionImages/astronomy.jpg";
@@ -7,6 +6,7 @@ import solar_system from "../../Assets/Images/RecentSectionImages/solar_system.j
 import telescope from "../../Assets/Images/RecentSectionImages/telescope.jpg";
 import universe from "../../Assets/Images/RecentSectionImages/universe.jpg";
 import { useEffect, useState } from "react";
+import LandingButton from "../../Utils/LandingButton/LandingButton";
 
 const techs = [
   {
@@ -59,7 +59,8 @@ const RecentSection = () => {
       <h1>Recent Techs</h1>
       <div ref={ref} className="techs">
         {techs.map((tech) => (
-          <article key={tech.id}
+          <article
+            key={tech.id}
             className={
               startItemAnimation ? "tech-item tech-item-animation" : "tech-item"
             }
@@ -74,7 +75,7 @@ const RecentSection = () => {
               </div>
               <h2>{tech.title}</h2>
               <p>{tech.summary}</p>
-              <PrimaryButton
+              <LandingButton
                 label={"Try It Out"}
                 onClick={() => window.open(tech.link)}
               />

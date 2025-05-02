@@ -1,6 +1,6 @@
 import videoBg from "../../Assets/Videos/earth_bg_video_reverse.mp4";
 import { ROUTES } from "../../Routes/Routes";
-import PrimaryButton from "../../Utils/PrimaryButton/PrimaryButton";
+import LandingButton from "../../Utils/LandingButton/LandingButton";
 import "./Components/HeroSection.css";
 import { useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
@@ -34,7 +34,7 @@ const HeroSection = () => {
       <div className="content">
         <h1>The Blue Planet</h1>
         <p>Discover the Final Frontier, Space Awaits!</p>
-        <PrimaryButton label={"Begin Your Journey"} onClick={handleClick} />
+        <LandingButton label={"Begin Your Journey"} onClick={handleClick} />
       </div>
     </section>
   );
