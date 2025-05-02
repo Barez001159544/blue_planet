@@ -30,3 +30,10 @@
     text-decoration: none;
     text-transform: uppercase;
 }
+
+.home-menu .divider{
+    height: 1px;
+    width: calc(100% - 500px);
+    background-color: rgb(142, 142, 142);
+    margin-right: 50px;
+}

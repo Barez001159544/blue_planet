@@ -9,6 +9,7 @@ const HomeMenu = () => {
         <a href="#">Explore</a>
         <a href="#">Profile</a>
       </div>
+      <div className="divider"></div>
       <PrimaryButton label={"UPLOAD"} animated={true} />
     </nav>
   );
