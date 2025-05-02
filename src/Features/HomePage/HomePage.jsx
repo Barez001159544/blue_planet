@@ -1,11 +1,12 @@
 import "./Components/HomePage.css";
 import Exploration from "./Exploration";
+import HomeMenu from "./HomeMenu";
 
 const HomePage = () => {
   return (
     <section className="home-section">
-        <div className="home-nav-bar"></div>
-        <Exploration/>
+      <HomeMenu />
+      <Exploration />
     </section>
   );
 };
