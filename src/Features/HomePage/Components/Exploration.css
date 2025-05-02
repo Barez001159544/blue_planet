@@ -2,7 +2,9 @@
     height: calc(100vh - 100px);
     overflow-y: auto;
     box-sizing: border-box;
-    padding: 50px;
+    padding: 10px 50px 50px 50px;
+    scrollbar-width: thin;
+  scrollbar-color: white transparent;
 }
 
 .exploration-gallery .gallery-img{
