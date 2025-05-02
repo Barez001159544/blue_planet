@@ -18,7 +18,11 @@
     filter: blur(20px);
     -webkit-filter: blur(15px);
     transform: scale(1.1);
-    /* z-index: -1; */
+    z-index: -1;
   }
   
-
+.home-section .home-nav-bar{
+    height: 100px;
+    width: 100vw;
+    background-color: blue;
+}
