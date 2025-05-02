@@ -2,9 +2,16 @@ import { useEffect, useState, useRef } from "react";
 import PrimaryButton from "../../Utils/PrimaryButton/PrimaryButton";
 import "./Components/InfoSection.css";
 import { useInView } from "react-intersection-observer";
-import Typewriter from 'typewriter-effect/dist/core';
+import Typewriter from "typewriter-effect/dist/core";
+import { ROUTES } from "../../Routes/Routes";
+import { useNavigate } from "react-router-dom";
 
 const InfoSection = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(ROUTES.HOME);
+  };
   const { ref, inView } = useInView({
     threshold: 0,
     triggerOnce: false,
@@ -23,12 +30,12 @@ const InfoSection = () => {
     if (startTypeAnimation && textRef.current) {
       const typewriter = new Typewriter(textRef.current, {
         strings: [
-          "Discover the mysteries, beauty, and life that make our home planet truly extraordinary."
+          "Discover the mysteries, beauty, and life that make our home planet truly extraordinary.",
         ],
         autoStart: true,
         loop: true,
         delay: 75,
-        pauseFor: 300000
+        pauseFor: 300000,
       });
 
       typewriter.start();
@@ -43,7 +50,7 @@ const InfoSection = () => {
             <h1>Our Home Planet</h1>
             <p ref={textRef}></p>
           </div>
-            <PrimaryButton label={"Get Started"} />
+          <PrimaryButton label={"Get Started"} onClick={handleClick} />
         </div>
       </div>
     </section>
