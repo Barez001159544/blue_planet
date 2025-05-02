@@ -1,4 +1,5 @@
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import "./Components/Exploration.css";
 
 import explore1 from "../../Assets/Images/explore_test/explore1.jpg";
 import explore2 from "../../Assets/Images/explore_test/explore2.jpg";
@@ -11,29 +12,30 @@ import explore8 from "../../Assets/Images/explore_test/explore8.jpg";
 import explore9 from "../../Assets/Images/explore_test/explore9.jpg";
 
 const images = [
-    explore1,
-    explore2,
-    explore3,
-    explore4,
-    explore5,
-    explore6,
-    explore7,
-    explore8,
-    explore9,
-  ];
+  explore1,
+  explore2,
+  explore3,
+  explore4,
+  explore5,
+  explore6,
+  explore7,
+  explore8,
+  explore9,
+];
 
 const Exploration = () => {
   return (
-    <div style={ { height: '100vh', overflowY: 'auto' }}>
-      <ResponsiveMasonry
-        columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}
+    <div className="exploration-gallery">
+      <ResponsiveMasonry 
+      columnsCountBreakPoints={{350: 1, 750: 2, 900: 4}}
+      gutterBreakpoints={{350: "12px", 750: "16px", 900: "24px"}}
       >
-        <Masonry gutter="20px">
+        <Masonry gutter="40px" style={{gap: "20px"}}>
           {images.map((img, i) => (
             <img
+              className="gallery-img"
               key={i}
               src={img}
-              style={{ width: "100%", display: "block", borderRadius: "8px" }}
               alt={`Gallery ${i}`}
             />
           ))}

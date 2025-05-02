@@ -1,0 +1,14 @@
+.exploration-gallery{
+    height: calc(100vh - 100px);
+    overflow-y: auto;
+    box-sizing: border-box;
+    padding: 50px;
+}
+
+.exploration-gallery .gallery-img{
+    background-color: blue;
+    width: calc(100% - 0px);
+    display: block;
+    border-radius: 25px;
+    margin: 7.5px 0;
+}
