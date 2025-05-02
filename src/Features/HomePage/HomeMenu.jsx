@@ -1,5 +1,6 @@
 import "./Components/HomeMenu.css";
 import logo from "../../Assets/Images/logo.png";
+import PrimaryButton from "../../Utils/PrimaryButton/PrimaryButton";
 const HomeMenu = () => {
     return (
         <nav className="home-menu">
@@ -8,6 +9,7 @@ const HomeMenu = () => {
                 <a href="#">Explore</a>
                 <a href="#">Profile</a>
             </div>
+                <PrimaryButton label={"UPLOAD"}/>
         </nav>
     );
 }

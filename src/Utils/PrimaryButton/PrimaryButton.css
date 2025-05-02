@@ -1,0 +1,28 @@
+.primary-button {
+    height: 50px;
+    padding: 0px 50px;
+    border-radius: 100px;
+    font-family: "Karantina-Light";
+    color: white;
+     border: none;
+     text-align: center;
+     color: rgba(255,255,255,0.9);
+     border-radius: 50px;
+     background: linear-gradient(-45deg, #0190D2, #0163d2, #338AFF, #3CF0C5) ;
+     background-size: 600%;
+     animation: anime 16s linear infinite;
+     cursor: pointer;
+  }
+  
+  @keyframes anime {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
