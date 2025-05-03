@@ -6,7 +6,7 @@
 }
 
 .image-container{
-    background-image: url("C:\Users\BEST TECH\Desktop\react knowledge\blue_planet\src\Assets\Images\universe_zoomed.jpg");
+    background-image: url("../../../Assets/Images/universe_zoomed.jpg");
     background-position: center top;
     width: 50%;
     border-radius: 25px;

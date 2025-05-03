@@ -5,6 +5,7 @@ import astronomy from "../../Assets/Images/RecentSectionImages/astronomy.jpg";
 import solar_system from "../../Assets/Images/RecentSectionImages/solar_system.jpg";
 import telescope from "../../Assets/Images/RecentSectionImages/telescope.jpg";
 import universe from "../../Assets/Images/RecentSectionImages/universe.jpg";
+
 import { useEffect, useState } from "react";
 import LandingButton from "../../Utils/LandingButton/LandingButton";
 

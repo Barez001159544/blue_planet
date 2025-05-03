@@ -1,10 +1,8 @@
 import "./Components/FooterSection.css";
-
 import facebook from "../../Assets/Images/Social/facebook.png";
 import twitter from "../../Assets/Images/Social/twitter.png";
 import instagram from "../../Assets/Images/Social/instagram.png";
 import github from "../../Assets/Images/Social/github.png";
-
 import { useInView } from "react-intersection-observer";
 import { useEffect, useState } from "react";
 

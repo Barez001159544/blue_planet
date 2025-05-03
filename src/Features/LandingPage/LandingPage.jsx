@@ -1,7 +1,5 @@
 import "./Components/LandingPage.css";
-
 import NavigationBar from "./NavigationBar";
-
 import HeroSection from "./HeroSection";
 import InfoSection from "./InfoSection";
 import RecentSection from "./RecentSection";
