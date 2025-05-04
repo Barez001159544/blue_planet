@@ -6,6 +6,33 @@ import github from "../../Assets/Images/Social/github.png";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useState } from "react";
 
+const ContactsInfo = [
+  {
+    id: 1,
+    name: "Facebook",
+    link: "https://www.facebook.com/profile.php?id=100009746616856",
+    image: facebook,
+  },
+  {
+    id: 2,
+    name: "X.com",
+    link: "https://x.com/BarezAzadIsmail",
+    image: twitter,
+  },
+  {
+    id: 3,
+    name: "Instagram",
+    link: "https://www.instagram.com/barez_azad_1/",
+    image: instagram,
+  },
+  {
+    id: 4,
+    name: "GitHub",
+    link: "https://github.com/Barez001159544",
+    image: github,
+  },
+];
+
 const FooterSection = () => {
   const { ref, inView } = useInView({
     threshold: 0,
@@ -35,18 +62,11 @@ const FooterSection = () => {
           To ignore, add // eslint-disable-next-line to the line before.
         </p>
         <div className="social">
-          <a href="#">
-            <img src={facebook} alt="" />
-          </a>
-          <a href="#">
-            <img src={twitter} alt="" />
-          </a>
-          <a href="#">
-            <img src={instagram} alt="" />
-          </a>
-          <a href="#">
-            <img src={github} alt="" />
-          </a>
+          {ContactsInfo.map((e) => (
+            <a key={e.id} href={e.link} target="blank">
+              <img src={e.image} alt={e.name} />
+            </a>
+          ))}
         </div>
         <h6>&copy; 2025 Tawakal All-Rights Reserved.</h6>
       </div>
