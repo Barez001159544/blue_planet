@@ -1,5 +1,7 @@
 import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import "./Components/Exploration.css";
+import { useNavigate } from "react-router-dom";
+import { ROUTES } from "../../Routes/Routes";
 
 import explore1 from "../../Assets/Images/explore_test/explore1.jpg";
 import explore2 from "../../Assets/Images/explore_test/explore2.jpg";
@@ -24,6 +26,12 @@ const images = [
 ];
 
 const Exploration = () => {
+
+  const navigate = useNavigate();
+
+  const handleGalleryClick = () => {
+    navigate(ROUTES.DETAIL);
+  }
   return (
     <div className="exploration-gallery">
       <ResponsiveMasonry 
@@ -37,6 +45,7 @@ const Exploration = () => {
               key={i}
               src={img}
               alt={`Gallery ${i}`}
+              onClick={handleGalleryClick}
             />
           ))}
         </Masonry>
