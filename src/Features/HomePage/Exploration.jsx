@@ -29,8 +29,8 @@ const Exploration = () => {
 
   const navigate = useNavigate();
 
-  const handleGalleryClick = () => {
-    navigate(ROUTES.DETAIL);
+  const handleGalleryClick = (image) => {
+    navigate(ROUTES.DETAIL, {state: {image}});
   }
   return (
     <div className="exploration-gallery">
@@ -45,7 +45,7 @@ const Exploration = () => {
               key={i}
               src={img}
               alt={`Gallery ${i}`}
-              onClick={handleGalleryClick}
+              onClick={() => handleGalleryClick(img)}
             />
           ))}
         </Masonry>
