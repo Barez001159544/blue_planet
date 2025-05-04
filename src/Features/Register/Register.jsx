@@ -40,7 +40,7 @@ const Register = () => {
       </div>
       <div className="content-container">
         <div className="in-content-container">
-          <h3>Register at lightspeed!</h3>
+          <h3>Register at Lightspeed!</h3>
           <GoogleButton onClick={handleGoogleClick}/>
         </div>
       </div>
