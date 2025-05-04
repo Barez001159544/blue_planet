@@ -3,12 +3,18 @@ import GoogleButton from "./Components/GoogleButton";
 import "./Components/Register.css";
 import { useNavigate } from "react-router-dom";
 
+import { ROUTES } from "../../Routes/Routes";
+
 const Register = () => {
 
     const navigate = useNavigate();
 
     const handleBackButton = () => {
         navigate(-1);
+    }
+
+    const handleGoogleClick = () => {
+      navigate(ROUTES.HOME);
     }
 
   const btnIcon = (
@@ -35,7 +41,7 @@ const Register = () => {
       <div className="content-container">
         <div className="in-content-container">
           <h3>Register at lightspeed!</h3>
-          <GoogleButton/>
+          <GoogleButton onClick={handleGoogleClick}/>
         </div>
       </div>
     </section>
