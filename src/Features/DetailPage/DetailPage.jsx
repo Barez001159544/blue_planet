@@ -33,7 +33,6 @@ const DetailPage = () => {
         src={image}
         alt="Selected"
         className="detailed-image"
-        style={{ width: "100%", maxWidth: "600px" }}
       />
       <div className="details-content">
         <div className="details-header">

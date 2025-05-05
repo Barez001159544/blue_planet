@@ -1,12 +1,32 @@
-.details-section{
+.details-section {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.details-container{
+  }
+  
+  .details-container {
+    position: relative;
     background-color: blue;
     width: 80vw;
     height: 90vh;
     border-radius: 25px;
     overflow: hidden;
-}
+  }
+  
+  .details-container .detailed-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+  
+  .details-container .details-content {
+    position: relative;
+    z-index: 1;
+    padding: 25px;
+    color: white;
+  }
+  
