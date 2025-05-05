@@ -27,7 +27,7 @@ const DetailPage = () => {
   );
 
   return (
-    <section className="home-section">
+    <section className="home-section details-section">
       <div className="details-container">
       <img
         src={image}
