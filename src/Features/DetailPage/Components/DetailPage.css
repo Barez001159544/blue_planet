@@ -24,13 +24,22 @@
   }
   
   .details-container .details-content {
+    height: 100%;
     position: relative;
     z-index: 1;
     padding: 25px;
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
   }
   
   .details-content .details-header{
     display: flex;
     justify-content: space-between;
+  }
+
+  .details-content .details-description{
+    background-color: blue;
   }

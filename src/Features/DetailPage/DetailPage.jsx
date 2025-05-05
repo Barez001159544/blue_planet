@@ -75,6 +75,21 @@ const DetailPage = () => {
               <IconButton icon={expandIcon} />
             </div>
           </div>
+          <div className="details-description">
+            <div className="details-title">
+              <h5>Amazon Rainforest</h5>
+              <h6>12.18.02</h6>
+            </div>
+            <p>
+              The Amazon rainforest, covering much of northwestern Brazil and
+              extending into Colombia, Peru and other South American countries,
+              is the world’s largest tropical rainforest, famed for its
+              biodiversity. It’s crisscrossed by thousands of rivers, including
+              the powerful Amazon. River towns, with 19th-century architecture
+              from rubber-boom days, include Brazil’s Manaus and Belém and
+              Peru’s Iquitos and Puerto Maldonado.
+            </p>
+          </div>
         </div>
       </div>
     </section>
