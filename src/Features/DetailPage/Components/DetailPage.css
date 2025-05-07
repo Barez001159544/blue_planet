@@ -6,7 +6,6 @@
 
 .details-container {
   position: relative;
-  background-color: blue;
   width: 80vw;
   height: 90vh;
   border-radius: 25px;
@@ -46,4 +45,25 @@
   -webkit-backdrop-filter: blur(15px);
   border-radius: 15px;
   padding: 25px;
+}
+
+.details-content .details-description .details-title{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.details-content .details-description .details-title h5{
+  font-size: 18px;
+}
+
+.details-content .details-description .details-title h6{
+  background-color: white;
+  color: black;
+  border-radius: 100px;
+  padding: 3px 10px;
+}
+
+.details-content .details-description .details-title p{
+  letter-spacing: 1px;
 }

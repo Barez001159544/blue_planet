@@ -68,7 +68,6 @@ const DetailPage = () => {
           <div className="details-header">
             <div className="left-header">
               <IconButton icon={backIcon} />
-              <IconButton icon={backIcon} />
             </div>
             <div className="right-header">
               <IconButton icon={downloadIcon} />
