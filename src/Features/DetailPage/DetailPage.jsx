@@ -1,9 +1,11 @@
 import IconButton from "../../Utils/IconButton/IconButton";
 import "./Components/DetailPage.css";
 import { useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 const DetailPage = () => {
   const location = useLocation();
   const image = location.state?.image;
+  const navigate = useNavigate();
 
   if (!image) {
     return <p className="emptiness-message">No image provided</p>;
@@ -60,6 +62,11 @@ const DetailPage = () => {
     </svg>
   );
 
+
+  const handleBackButton= () => {
+    navigate(-1);
+  }
+
   return (
     <section className="home-section details-section">
       <div className="details-container">
@@ -67,7 +74,7 @@ const DetailPage = () => {
         <div className="details-content">
           <div className="details-header">
             <div className="left-header">
-              <IconButton icon={backIcon} />
+              <IconButton icon={backIcon} onClick={handleBackButton}/>
             </div>
             <div className="right-header">
               <IconButton icon={downloadIcon} />
