@@ -62,10 +62,33 @@ const DetailPage = () => {
     </svg>
   );
 
-
-  const handleBackButton= () => {
+  const handleBackButton = () => {
     navigate(-1);
-  }
+  };
+
+  const handleExpandButton = () => {
+    window.open(image, "_blank");
+  };
+
+  const handleDownloadButton = async (fileName = "", imageUrl) => {
+    try {
+      const response = await fetch(imageUrl, { mode: 'cors' }); // Ensure CORS is allowed
+      const blob = await response.blob();
+  
+      const url = URL.createObjectURL(blob);
+  
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = fileName;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(url);
+    } catch (error) {
+      console.error("Download failed:", error);
+    }
+  };
+  
 
   return (
     <section className="home-section details-section">
@@ -74,11 +97,11 @@ const DetailPage = () => {
         <div className="details-content">
           <div className="details-header">
             <div className="left-header">
-              <IconButton icon={backIcon} onClick={handleBackButton}/>
+              <IconButton icon={backIcon} onClick={handleBackButton} />
             </div>
             <div className="right-header">
-              <IconButton icon={downloadIcon} />
-              <IconButton icon={expandIcon} />
+              <IconButton icon={downloadIcon} onClick={() => handleDownloadButton("Amazon", image)}/>
+              <IconButton icon={expandIcon} onClick={handleExpandButton} />
             </div>
           </div>
           <div className="details-description">
